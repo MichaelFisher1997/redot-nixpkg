@@ -44,7 +44,7 @@ let
 in
 stdenv.mkDerivation rec {
   pname = "redot";
-  version = "redot-4.3-beta.2";
+  version = "redot-4.3-beta.3";
   commitHash = "92225b33c283bff14c105c4d44c22a831601721b";
 
   src = fetchFromGitHub {
@@ -136,7 +136,7 @@ stdenv.mkDerivation rec {
     cp misc/dist/linux/org.redotengine.Redot.desktop "$out/share/applications/org.redotengine.Redot.desktop"
     substituteInPlace "$out/share/applications/org.redotengine.Redot.desktop" \
       --replace "Exec=redot" "Exec=$out/bin/redot.linuxbsd.editor.x86_64" \
-      --replace "Redot Engine" "redot Engine 4"
+      --replace "Redot Engine" "redot Engine"
     cp icon.svg "$out/share/icons/hicolor/scalable/apps/redot.svg"
     cp icon.png "$out/share/icons/redot.png"
 
@@ -149,6 +149,6 @@ stdenv.mkDerivation rec {
     license = lib.licenses.mit;
     platforms = [ "i686-linux" "x86_64-linux" "aarch64-linux" ];
     maintainers = with lib.maintainers; [ shiryel ];
-    mainProgram = "redot4.3beta2";
+    mainProgram = "redot4.3beta3";
   };
 }
