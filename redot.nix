@@ -45,7 +45,7 @@ in
 stdenv.mkDerivation rec {
   pname = "redot";
   version = "redot-4.3-stable";
-  commitHash = "1zk5ipikxv0hgx0libgsb9i3fk247x4dmj7br5kbbgvklqpwbm4b";
+  commitHash = "8bd4c52fa673bfb566c9ebc8da483f444c37625afaad48417f10ec3ee38d65fe";
 
   src = fetchFromGitHub {
     owner = "Redot-Engine";
