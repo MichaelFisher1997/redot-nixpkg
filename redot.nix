@@ -45,13 +45,13 @@ in
 stdenv.mkDerivation rec {
   pname = "redot";
   version = "redot-4.3-stable";
-  commitHash = "6dd887988a66cbe9b7c70ea8bb96d11046dd5d89";
+  commitHash = "06panqdbsc3hfzja0nlzi31px39i73w74ydz1wfcbwl2ca6wfj4b";
 
   src = fetchFromGitHub {
     owner = "Redot-Engine";
     repo = "redot-engine";
     rev = commitHash;
-    sha256 = "0c6f60x1rl1q2j0wmmzhvqp2xs18h7sc4br9w1zsbpl0wa9q54zz";
+    sha256 = "8b48c78d6282f2c51c0fbf7972f838318d7ec3889f5aa0e4777030bd1ab6ea1a";
   };
 
   nativeBuildInputs = [
