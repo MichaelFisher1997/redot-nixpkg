@@ -44,14 +44,14 @@ let
 in
 stdenv.mkDerivation rec {
   pname = "redot";
-  version = "redot-4.3-rc.4";
-  commitHash = "364a394be03f7b22e8c4f66e51639ae731fe7ae1";
+  version = "redot-4.3-stable";
+  commitHash = "1zk5ipikxv0hgx0libgsb9i3fk247x4dmj7br5kbbgvklqpwbm4b";
 
   src = fetchFromGitHub {
     owner = "Redot-Engine";
     repo = "redot-engine";
     rev = commitHash;
-    sha256 = "17ziv44rgbxzqz85bgx2k4zzghfak83y8iginvdk57lb8mv55pgb";
+    sha256 = "0c6f60x1rl1q2j0wmmzhvqp2xs18h7sc4br9w1zsbpl0wa9q54zz";
   };
 
   nativeBuildInputs = [
@@ -148,6 +148,6 @@ stdenv.mkDerivation rec {
     license = lib.licenses.mit;
     platforms = [ "i686-linux" "x86_64-linux" "aarch64-linux" ];
     maintainers = with lib.maintainers; [ shiryel ];
-    mainProgram = "redot-4.3-rc.4";
+    mainProgram = "redot-4.3-stable";
   };
 }
